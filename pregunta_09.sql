@@ -38,3 +38,8 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+WITH c21_min AS (
+    SELECT MIN(c21) FROM tbl2
+)
+
+SELECT * FROM tbl2 WHERE c21 IN c21_min
